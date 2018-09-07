@@ -36,3 +36,8 @@ process.env.NODE_ENV =  process.env.PORNODE_ENVT || 'dev';
 
  process.env.URLDB = urlDB; 
 
+/**
+ * Google Client ID
+ */
+
+ process.env.CLIENT_ID =process.env.CLIENT_ID || '273551881894-4cbnh79iisn190u4gu6k71bef8mq12ph.apps.googleusercontent.com';
