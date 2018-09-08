@@ -20,6 +20,11 @@ app.use( express.static(path.resolve(__dirname , '../public')))
 // configuracion local de rutas
 app.use(require('./routes/index'));
 
+var options = {
+    server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },
+    replset: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },
+    useNewUrlParser: true
+  };
 
 
 mongoose.connect( process.env.URLDB ,{useNewUrlParser: true})

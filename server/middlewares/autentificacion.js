@@ -15,7 +15,7 @@ let verificaToken = (req, res, next ) => {
                 return res.status(401).json({
                     ok:false,
                     err:{
-                        message: 'Error '
+                        message: 'Error de autenticacion '
                     }
                 })
             }
